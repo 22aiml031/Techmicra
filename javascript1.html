@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Devang</h1>
+    <p id="des">This is some text that you want to limit to 10 words.</p>
+
+    <script>
+      document.getElementById("title").innerHTML = "Hello World!";
+
+      var x = 10;
+      var y = 20;
+
+      console.log(x + y);
+
+      x = 50;
+      var y = 50;
+      console.log(x + y);
+
+      let a = 10;
+      let b = 20;
+      console.log(a + b);
+
+      a = 50;
+      b = 50;
+      // let b = 50; // error because b is already declared or it will not redefine the variable
+      console.log(a + b);
+
+      const z = 10;
+      // z = 20; // error because const variable can't be reassigned
+      console.log(z);
+
+      // Data Types
+      let name = "John";
+      let age = 25;
+      let isMarried = false;
+      let height = 5.7;
+      let x1 = null;
+      let y1 = undefined;
+
+      console.log(name);
+      console.log(age);
+      console.log(isMarried);
+      console.log(height);
+      console.log(x1);
+      console.log(y1);
+
+      // <p id="des"></p>
+      // let des = document.getElementById("des").textContent;
+      // console.log(des);
+
+      // let d = des.split(' ');
+      // let newtext = x.splice(0,10).join(" ") + "..."
+
+      let c = document.getElementById("title");
+      c.style.color = "red";
+
+      // Arithmetic Operators
+      let a1 = 10;
+      let b1 = 5;
+      a1 = 20;
+      console.log("Addition:", a1 + b1);
+      console.log("Subtraction:", a1 - b1);
+      console.log("Multiplication:", a1 * b1);
+      console.log("Division:", a1 / b1);
+      console.log("Modulus:", a1 % b1);
+      console.log("Increment:", ++a1);
+      console.log("Decrement:", --b1);
+
+      // Assignment Operators
+      let c1 = a1;
+      console.log("Assignment:", c1);
+
+      c1 = c1 + a1;
+      console.log("Addition Assignment:", c1);
+
+      c = c1 - a1;
+      console.log("Subtraction Assignment:", c1);
+
+      c *= a;
+      console.log("Multiplication Assignment:", c1);
+
+      c /= a;
+      console.log("Division Assignment:", c1);
+
+      c %= a;
+      console.log("Modulus Assignment:", c1);
+
+      // Comparison Operators
+      console.log("Equal:", a1 == b1);
+      console.log("Not Equal:", a1 != b1);
+      console.log("Less than:", a1 < b1);
+      console.log("Greater than or equal to:", a1 >= b1);
+      console.log("Less than or equal to:", a1 <= b1);
+      console.log("Strict Equal:", a1 === b1);
+      console.log("Strict Not Equal:", a1 !== b1);
+
+      // Logical Operators
+      console.log("Logical AND:", a1 > 5 && b1 > 5);
+      console.log("Logical OR:", a1 > 5 || b1 > 5);
+      console.log("Logical NOT:", !(a1 > 5));
+
+      // Bitwise Operators
+      console.log("Bitwise AND:", a1 & b1);
+      console.log("Bitwise OR:", a1 | b1);
+      console.log("Bitwise XOR:", a1 ^ b1);
+      console.log("Bitwise NOT:", ~a1);
+      console.log("Left Shift:", a1 << 1);
+      console.log("Right Shift:", a1 >> 1);
+      console.log("Zero-fill Right Shift:", a1 >>> 1);
+    </script>
+  </body>
+</html>

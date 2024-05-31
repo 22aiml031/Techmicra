@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>city</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Devang</td>
+                <td>31</td>
+                <td>nadiad</td>
+            </tr>
+            <tr>
+                <td>Hetvi</td>
+                <td>28</td>
+                <td>ahmedabad</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="task.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Name"><br><br>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Age"><br><br>
+        <label for="">Email:</label>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" required><br><br>
+        <label for="city">City:</label>
+        
+        <select name="city" id="">
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="nadiad">Nadiad</option>
+            <option value="Surat" >Surat</option>
+            <option value="none" selected disabled>---</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Rajkot">Rajkot</option>
+        </select><br><br>
+        
+        <br> 
+        <label for="">Male</label>
+        <input type="radio" name="gender" value="male">
+        <label for="">Female</label>
+        <input type="radio" name="gender" value="female">
+        <br>
+        <label for="Skills">Skills:</label>
+        <input type="checkbox" name="skills" value="HTML">HTML
+        <input type="checkbox" name="skills" value="CSS">CSS
+        <input type="checkbox" name="skills" value="JS">JS
+        <br>
+       
+       <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="myFunction()">Click me</button>
+    <button onclick="showimg()">show</button>
+    <button onclick="hideimg()">hide</button>
+    <button id="toggle" onclick="toggleimg()">show</button>
+    <button id="on/off" onclick="glow()">on/off</button>
+
+
+    
+    <img id="img" src="https://www.w3schools.com/js/pic_bulboff.gif">
+    <script>
+        function myFunction() {
+            alert("Here I will show you how to turn on/off the light bulb.");
+        }
+        function showimg() {
+            document.getElementById("img").style.display = "block";
+        }
+        function hideimg() {
+            document.getElementById("img").style.display = "none";
+        }
+        function toggleimg() {
+            var x = document.getElementById("img");
+            var y = document.getElementById("toggle");
+            if (x.style.display === "none") {
+                
+                x.style.display = "block";
+                y.innerHTML = "hide";
+               
+            } else {
+               
+                x.style.display = "none";
+                y.innerHTML = "show";
+
+                
+            }
+        }
+        function glow() {
+            var x = document.getElementById("img");
+            var y = document.getElementById("on/off");
+            if (x.src.match("bulbon")) {
+                x.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+                y.innerHTML = "on";
+            } else {
+                x.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+                y.innerHTML = "off";
+            }
+        }
+       
+
+
+    </script>
+</body>
+</html>

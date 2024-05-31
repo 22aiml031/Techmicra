@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="" onsubmit="return submitForm()">
+
+        <label for="">First Name</label>
+        <input type="text" id="firstName">
+        <br>
+        <br>
+        <label for="">Last Name</label>
+        <input type="text" id="lastName">
+        <br>
+        <br>
+        <label for="">Mobile No.</label>
+        <input type="tel" id="mobile">
+        <br>
+        <br>
+        <label for="">Email</label>
+        <input type="email" id="email">
+        <br>
+        <br>
+        <label for="">Password</label>
+        <input type="password" id="password">
+
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+
+    <script>
+        function submitForm(){
+            let firstName = document.getElementById('firstName').value
+            let lastName = document.getElementById('lastName').value
+            let mobile = document.getElementById('mobile').value
+            let flage = false
+            if(!firstName){
+                alert('enter first name')
+                flage = true
+            }else if(!lastName){
+                alert('enter last name')
+                flage = false
+            }else if(!mobile){
+                alert('enter mobile number')
+                flage = false
+            }else if(mobile.length != 10){
+                alert('enter valid mobile number')
+                flage = false
+            }
+            else if(!email){
+                alert('enter valid email')
+                flage = false
+
+            }
+            else if(!password){
+                alert('enter password')
+                flage = false
+            }
+            else if(password.length <= 8){
+                alert('password must be 8 character long')
+                flage = false
+            }
+            
+            else if(password.search(/[!@#$%^&*]/) == -1){
+                alert('password must contain special character')
+                flage = false
+            }
+            else{
+                alert('form submit successfully')
+                flage = true
+            }
+            return flage;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-group{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .row1, .row2{
+            width: 48%;
+            display: flex;
+            justify-content: space-between;
+        }
+        img{
+            width: 45%;
+            height: 400px;
+        }
+
+        @media (max-width:700px){
+             .img-group{
+                display: block;
+             }
+
+             .row1, .row2{
+                width: 100%;
+             }
+
+             .row2{
+                margin-top: 10px;
+             }
+        }
+
+        @media (max-width:400px){
+            .row1, .row2{
+                display: block;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="img-group">
+       <div class="row1">
+
+           <img src="./pic-2.jpeg" alt="">
+           <img src="./download.jpeg" alt="">
+
+        </div> 
+        <div class="row2">
+
+            <img src="./images.jpeg" alt="">
+            <img src="./pic-3.jpeg" alt="">
+            
+        </div>
+    </div>
+
+</body>
+</html>

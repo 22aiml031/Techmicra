@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header {
+            background-image: url("hero-bg.png");
+            height: 100vh;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .right {
+            width: 25%;
+            background-color: aqua;
+            box-shadow: 10px 10px 10px black;
+            border-radius: 10px;
+
+        }
+
+        .image{
+            margin-left: 160px;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .left {
+            margin-top: 50px;
+            width: 50%;
+            color: white;
+
+        }
+
+        .left p {
+            font-size: 16px;
+            color: white;
+        }
+
+        .title {
+            text-align: center;
+            background-color: red;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 20px 0px;
+
+        }
+
+        .myform {
+            text-align: center;
+            background-color: white;
+            padding-left: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .myinput {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: transparent;
+            outline: none;
+            font-size: 15px;
+            padding-top: 10px;
+
+
+        }
+
+        .mysubmit {
+            width: 86%;
+            padding: 10px 0px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+
+        }
+        
+        .discover{
+        background-color: #35c9ad;
+    color: #fff;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  
+}
+.discover:hover {
+    background:none;
+    border-color: #f6f9f8;
+    outline: none;
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="header">
+            <img src="./logo.png" alt="" class="image">
+            <div class="row2">
+                <div class="left">
+                    <p>
+                        Rewardix is an integrated couponing system with inbuilt capability of defining
+offers and loyalty on the fly.A digital reward solution that not only improves 
+customer engagement and interaction but also provides.AI reports focusing on 
+increasing Sales by giving insights of product moments & users purchase 
+habits leading to a bigger number of QR code generation and app demos.
+                    </p>
+                    <ul>
+                        <li>Integrated with offers Engine for real time cash back at wallets
+                            and banks during the sale process</li>
+                        <li>Real time campaigns & advertising</li>
+                    </ul>
+                    <button class="discover">Discover More</button>
+                    
+                </div>
+                <div class="right">
+                    <div class="title">Transform your Campaigning <br> experience with Rewardix</div>
+                    <form action="" class="myform">
+                        <input type="text" placeholder="Name" class="myinput"> <br>
+                        <input type="text" placeholder="Emailid" class="myinput"> <br>
+                        <input type="text" placeholder="Contact Number" class="myinput"> <br>
+                        <input type="text" placeholder="Company name" class="myinput"> <br>
+                        <input type="text" placeholder="city" class="myinput"> <br>
+                        <input type="text" placeholder="Post Number" class="myinput"> <br>
+                        <button class="mysubmit" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

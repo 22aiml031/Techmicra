@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Interface</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2y ungkapnyamxh6SJuQmWCSbQex2uKIK9foIUXC2vDWSSiVC+lLuhEYzJE6tROF0" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container-fluid h-100">
+    <div class="row justify-content-center h-100">
+      <div class="col-md-8 col-xl-6 border rounded shadow-sm bg-white p-4 overflow-auto h-100">
+        <div id="chat-messages">
+          <div class="d-flex justify-content-start mb-4">
+            <div class="p-3 bg-light rounded">
+              <p class="mb-0">Hi Jenny, It's Ryan. How's it going?</p>
+              <small class="text-muted">Ryan - 12 Aug 2023</small>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mb-4">
+            <div class="p-3 bg-primary rounded text-white">
+              <p class="mb-0">Pretty good, thanks. How about you?</p>
+              <small class="text-muted">Jenny - 12 Aug 2023</small>
+            </div>
+          </div>
+          </div>
+        <div class="form-group">
+          <textarea class="form-control" id="message-input" rows="3" placeholder="Type your message"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" id="send-message">Send</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A1sOzjOMPQ6S/uMbojs5S2q+8GLbccvwlz3Spcsoa9IKaP9Yggz89YCT4hlD5bg" crossorigin="anonymous"></script>
+</body>
+</html>

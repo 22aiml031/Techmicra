@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 100%;
+        height: 100vh;
+
+        position: relative;
+      }
+      .header {
+        position: absolute;
+        top:0px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+      }
+      
+      .orientation {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        height: 40px;
+        left: 650px;
+        top: 0;
+      }
+      .close {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .row2 {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background-color: rgb(77, 7, 143);
+      }
+      .upper {
+        display: flex;
+        position: absolute; 
+        left: 50px;
+        height: 30px;
+      }
+      .lower {
+        display: block;
+        position: relative;
+      }
+      .left {
+        display: flex;
+        height: 100px;
+        width: 50%;
+        background-color: rgb(77, 7, 143);
+      }
+      .upper1 {
+        display: block;
+        color: white;
+        top: 50px;
+        left: 200px;
+        font-size: 1.5rem;
+        position: absolute;
+
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+      }
+      .lower1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 1rem;
+        top: 200px;
+        left: 200px;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        width: 100%;
+      }
+      .lower2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 1rem;
+        top: 350px;
+        left: 200px;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+      }
+      .lower3 {
+        position: absolute;
+        left: 200px;
+        top: 400px;
+        text-align: center;
+      }
+      .button {
+        background-color: #38a1db; /* Button background color */
+        color: white; /* Button text color */
+        padding: 10px 20px; /* Padding for the button */
+        border-radius: 20px; /* Rounded corners */
+        text-decoration: none; /* Remove underline from the link */
+        font-family: Arial, sans-serif; /* Font family */
+        font-size: 16px; /* Font size */
+        font-weight: bold; /* Bold text */
+        display: inline-block;
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+      }
+
+      .button:hover {
+        background-color: #2e005c; /* Change background color on hover */
+        color: #38a1db; /* Change text color on hover */
+      }
+      .right {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 90px;
+
+        height: 350px;
+        width: 50%;
+      }
+      .main1 {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+      }
+      .header1 {
+        margin-left: 650px;
+        font-size: 1.5rem;
+
+        height: 100px;
+        width: 100%;
+      }
+      .header1 pre {
+        margin-left: -100px;
+        font-size: 1rem;
+      }
+      .box {
+        display: flex;
+        position: relative;
+        height: 500px;
+        width: 100%;
+      }
+      .left1 {
+        display: flex;
+        position: absolute;
+        left: 180px;
+        top: 20px;
+        height: 350px;
+        width: 50%;
+      }
+      .right1 {
+        display: flex;
+        width: 50%;
+        position: absolute;
+      }
+      .square {
+        display: flex;
+        justify-content: space-between;
+        top: 20px;
+        left: 500px;
+        height: 400px;
+        width: 50%;
+      }
+      .squa1 {
+        position: absolute;
+        display: flex;
+        left: 710px;
+        height: 170px;
+        width: 25%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        top: 20px;
+        background-color: aqua;
+      }
+      .squa2 {
+        position: absolute;
+        display: flex;
+        left: 710px;
+        height: 170px;
+        width: 25%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        top: 200px;
+        background-color: rgb(162, 130, 238);
+      }
+      .squa3 {
+        position: absolute;
+        display: flex;
+        left: 910px;
+        height: 170px;
+        width: 25%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        top: 20px;
+        background-color: violet;
+      }
+      .squa4 {
+        position: absolute;
+        display: flex;
+        left: 910px;
+        height: 170px;
+        width: 25%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        top: 200px;
+        background-color: blueviolet;
+      }
+      .lower4 {
+        display: block;
+        position: absolute;
+        color: rgb(8, 8, 8);
+        font-size: 1rem;
+        top: 400px;
+        left: 650px;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+      }
+      h5 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+      .more-button {
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 1.5em;
+        color: white;
+        position: relative;
+      }
+      .main3 {
+        position: relative;
+        top: -100px;
+        width: 100%;
+        height: 90vh;
+        background-color: rgb(77, 7, 143);
+      }
+      .header2 {
+        color: white;
+        position: absolute;
+        top: 50px;
+        left: 350px;
+        font-size: 1.5rem;
+      }
+      .box1 {
+        display: flex;
+        position: relative;
+        height: 500px;
+        width: 100%;
+      }
+      .left2 {
+        display: flex;
+        position: absolute;
+        left: 350px;
+        top: 150px;
+        height: 350px;
+        width: 50%;
+      }
+      .right2 {
+        display: flex;
+        width: 50%;
+        font-size: 1rem;
+        color: white;
+        top: 130px;
+        left: 830px;
+        position: absolute;
+      }
+      .more-button-container {
+        position: absolute;
+        display: flex;
+        text-decoration: underline;
+        top: 105px;
+        margin-top: 20px;
+      }
+      .hi {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 1rem;
+        top: 150px;
+        left: 2px;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        width: 100%;
+      }
+      .lower5 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 1rem;
+        top: 380px;
+        right: 480px;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+      }
+      .main4 {
+        margin: 10px;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+      }
+      .row3 {
+        display: flex;
+        position: relative;
+
+        height: 500px;
+        width: 100%;
+      }
+      .left {
+        display: flex;
+        background-color: white;
+        position: absolute;
+        left: 200px;
+        top: 50px;
+        height: 350px;
+        width: 50%;
+      }
+      .header {
+        color: blue;
+        position: absolute;
+        top: 50px;
+        left: 190px;
+        font-size: 1.5rem;
+      }
+      .content {
+        display: block;
+        position: absolute;
+        color: black;
+        font-size: 1rem;
+        top: 150px;
+        left: 70px;
+        height: 450px;
+        width: 100%;
+      }
+      .link {
+        position: absolute;
+        left: 200px;
+        bottom: 10px;
+      }
+      .learn-more {
+        position: absolute;
+        left: 200px;
+        top: 350px;
+      }
+      .button {
+        background-color: #38a1db; /* Button background color */
+        color: white; /* Button text color */
+        padding: 10px 20px; /* Padding for the button */
+        border-radius: 20px; /* Rounded corners */
+        text-decoration: none; /* Remove underline from the link */
+        font-family: Arial, sans-serif; /* Font family */
+        font-size: 16px; /* Font size */
+        font-weight: bold; /* Bold text */
+        display: inline-block;
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+      }
+      .right {
+        display: flex;
+        position: absolute;
+        right: -10px;
+        top: 90px;
+        height: 350px;
+        width: 50%;
+      }
+      .main5 {
+        width: 100%;
+        background-color: blueviolet;
+      }
+      .aquabox {
+        width: 40%;
+        height: 600px;
+        margin: auto;
+        position: relative;
+        background-color: aqua;
+      }
+      .img-bg {
+        width: 150%;
+        height: 80%;
+        right: -30px;
+        top: 55px;
+        position: absolute;
+        background-image: url(./WhatsApp\ Image\ 2024-05-21\ at\ 13.15.32_1f2dc986.jpg);
+      }
+
+      .box-group {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+      }
+      .row4 {
+        width: 100%;
+        position: absolute;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .row4 .box1 {
+        width: 20%;
+        top: 150px;
+        left: 550px;
+        position: absolute;
+        height: 60%;
+        background-color: white;
+      }
+      .row4 .box2 {
+        width: 20%;
+        top: 150px;
+        left: 750px;
+        position: absolute;
+        height: 60%;
+        background-color: white;
+      }
+      .row5 {
+        width: 100%;
+        position: absolute;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .row5 .box3 {
+        width: 20%;
+        top: 336px;
+        left: 550px;
+        position: absolute;
+        height: 60%;
+        background-color: white;
+      }
+      .row5 .box4 {
+        width: 20%;
+        top: 336px;
+        left: 750px;
+        position: absolute;
+        height: 60%;
+        background-color: white;
+      }
+      .row4 .row5 h5 {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+      }
+      .main7 {
+        height: 100vh;
+        background-color: blueviolet;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .img {
+        position: relative;
+        z-index: 1;
+      }
+      .img img {
+        width: 600px;
+        height: auto;
+        margin-left: 30%;
+        margin-top: 2%;
+      }
+      .b-box {
+        width: 400px;
+        height: 400px;
+        background-color: aqua;
+        position: absolute;
+        top: 60%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+      }
+      .text {
+        position: absolute;
+        background-color: white;
+        width: 350px;
+        padding: 20px;
+        z-index: 1;
+        top: 60%;
+        right: 80%;
+        transform: translate(120%, -50%);
+      }
+      .text button {
+        background-color: blueviolet;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .text button:hover {
+        background-color: #372060;
+      }
+      .main8 {
+        width: 100%;
+        background-color: blueviolet;
+        text-align: center;
+        height: 80vh;
+        margin-top: 10px;
+      }
+      .u8 {
+        color: white;
+        margin-bottom: 30px;
+      }
+      .d8 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .b1,
+      .b2,
+      .b3 {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: center;
+        width: 250px;
+      }
+      .b1 img,
+      .b2 img,
+      .b3 img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+      .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .b1:hover,
+      .b2:hover,
+      .b3:hover {
+        box-shadow: 10px 10px 10px;
+        transform: translateY(20px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="logo">
+          <img src="logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="orientation">
+        <img src="display-1.png" alt="logo" />
+        <img src="display-3.png" alt="logo" />
+        <img src="display-4.png" alt="logo" />
+        <img src="display-5.png" alt="logo" />
+        <img src="display-6.png" alt="logo" />
+      </div>
+      <div class="close">
+        <img src="close.png" alt="logo" />
+      </div>
+      <div class="row2">
+        <div class="upper">
+          <img src="logo-name.png" alt="logo" />
+        </div>
+        <div class="lower">
+          <div class="left">
+            <div class="upper1">
+              <pre><h1>Web Software 
+Developer</h1></pre>
+            </div>
+            <div class="lower1">
+              <pre><p>Lorem ipsum dolor sit amet consectetur adipisi
+Voluptas corporis nobis cumque assumenda pariatur eligendi 
+neque laborum perspiciatis sint at aperiam iure 
+sapiente animi quae natus repellendus excepturi, voluptatem 
+praesentium omnis id fuga cum aut esse. 
+                                                            </p></pre>
+            </div>
+            <div class="lower2">
+              <span>image from </span
+              ><a href="https://www.freepik.com" class="link">Freepik</a>
+            </div>
+            <div class="lower3">
+              <a href="#" class="button">READ MORE</a>
+            </div>
+          </div>
+
+          <div class="right">
+            <img src="imgpsh_fullsize_anim.jpg" alt="logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main1">
+      <div class="header1">
+        <h1>Key Features</h1>
+        <pre><h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4></pre>
+      </div>
+      <div class="box">
+        <div class="left1">
+          <img src="./key-feature.jpg" alt="logo" />
+        </div>
+        <div class="right1">
+          <div class="square">
+            <div class="squa1">
+              <h5>Development</h5>
+            </div>
+            <div class="squa2">
+              <h5>Design</h5>
+            </div>
+            <div class="squa3">
+              <h5>Top skills</h5>
+            </div>
+            <div class="squa4">
+              <h5>Responcive</h5>
+            </div>
+          </div>
+        </div>
+        <div class="lower4">
+          <span>image from </span
+          ><a href="https://www.freepik.com" class="link">Freepik</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main3">
+      <div class="header2">
+        <h1>Data Visualization</h1>
+      </div>
+      <div class="box1">
+        <div class="left2">
+          <img src="imgpsh_fullsize_anim.jpg" alt="logo" />
+        </div>
+        <div class="right2">
+          <h3>01. GOALS</h3>
+          <pre><h5>Sample text.Click to select the text box.
+Click again or double click to start editing 
+the text.</h5></pre>
+          <div class="hi">
+            <h3>01. GOALS</h3>
+            <pre><h5>Sample text.Click to select the text box.
+Click again or double click to start editing 
+the text.</h5></pre>
+            <div class="more-button-container">
+              <a href="./bootstrap.html" class="more-button">MORE</a>
+            </div>
+          </div>
+
+          <div class="more-button-container">
+            <a href="./bootstrap.html" class="more-button">MORE</a>
+          </div>
+          <div class="lower5">
+            <span>image from </span
+            ><a href="https://www.freepik.com" class="link">Freepik</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main4">
+      <div class="row3">
+        <div class="left">
+          <div class="header">
+            <h1>IT Solution</h1>
+          </div>
+          <div class="content">
+            <pre><p>
+              Lorem ipsum dolor sit amet consectetur 
+              Voluptas corporis nobis cumque  
+              
+            </p></pre>
+          </div>
+          <div class="link">
+            <span>image from </span>
+            <a href="https://www.freepik.com" class="link">Freepik</a>
+          </div>
+          <div class="learn-more">
+            <a href="https://www.freepik.com" class="button">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./it-solution.jpg" alt="logo" />
+        </div>
+      </div>
+    </div>
+
+    <div class="main5">
+      <div class="aquabox">
+        <div class="img-bg">
+          <div class="box-group">
+            <div class="row4">
+              <div class="box1"><h5>Development</h5></div>
+
+              <div class="box2"><h5>5G Network</h5></div>
+            </div>
+            <div class="row5">
+              <div class="box3"><h5>AI Product</h5></div>
+              <div class="box4"><h5>Automation</h5></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main7">
+      <div class="b-box"></div>
+      <div class="img">
+        <img src="./imgpsh_fullsize_anim (5).jpg" alt="Image" />
+      </div>
+      <div class="text">
+        <h2>Web Analytics</h2>
+        <p>
+          Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+          consectetur, adipisci velit, sed quia non numquam eius modi tempora
+          incidunt ut labore.
+        </p>
+        <p>Image from <a href="https://www.freepik.com">freepik</a></p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="main8">
+      <div class="u8">
+        <h1>Get in Touch!</h1>
+        <p>
+          We align leaders around a shared purpose and strategic story that
+          catalyzes their<br />
+          business and brand to take action.
+        </p>
+      </div>
+      <div class="d8">
+        <div class="b1">
+          <img src="./address.png" alt="Address Icon" />
+          <h2>Address:</h2>
+          <p>121 Rock street, 21 Avenue,<br />New Yourk, NY 92103-900</p>
+        </div>
+        <div class="b2">
+          <img src="./email.png" alt="Email Icon" />
+          <h2>Email:</h2>
+          <p>hello@company.com<br />support@company.com</p>
+        </div>
+        <div class="b3">
+          <img src="./phone.png" alt="Phone Icon" />
+          <h2>Call us:</h2>
+          <p>1 (234) 567-891<br />1 (234) 567-891</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Sample text. Click to select the text box. Click again or double click
+        to start editing the text.
+      </p>
+    </div>
+  </body>
+</html>
